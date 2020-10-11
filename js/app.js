@@ -60,13 +60,12 @@ function deleteNote(index) {
   showNotes();
 }
 
-
-Let search = document.getElementById('searchTxt');
+let search = document.getElementById('searchTxt');
 search.addEventListener("input", function () {
 
-  Let inputVal = search.value.toLowerCase();
-  console.log('Input event fired!', inputVal);
-  Let noteCards = document.getElementsByClassName('noteCard');
+  let inputVal = search.value.toLowerCase();
+  // console.log('Input event fired!', inputVal);
+  let noteCards = document.getElementsByClassName('notecard');
   Array.from(noteCards).forEach(function (element) {
     let cardTxt = element.getElementsByTagName("p")[0].innerText;
     if (cardTxt.includes(inputVal)) {
@@ -75,10 +74,9 @@ search.addEventListener("input", function () {
     else {
       element.style.display = "none";
     }
-    console.log(cardTxt);
+    // console.log(cardTxt);
   })
 })
-
 /*
 Further Features:
 1. Add Title
