@@ -83,6 +83,7 @@ search.addEventListener("input", function () {
     // console.log(cardTxt);
   })
 })
+
 /*
 Further Features:
 1. Add Title
