@@ -55,6 +55,7 @@ function showNotes() {
 }
 
 // Function to delete a note
+
 function deleteNote(index) {
   // console.log("I am deleting", index);
   let notes = localStorage.getItem("notes");
